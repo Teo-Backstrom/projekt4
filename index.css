@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: rgb(53, 0, 53);
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  padding: 1%;
+}
+
+li a {
+  font-size: 25px;
+  text-decoration: none;
+  color: white;
+}
+
+header ul {
+  display: flex;
+}
+
+header li {
+  list-style: none;
+  margin: 20px;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+h1 {
+  margin: auto;
+  text-align: center;
+  border: solid black 2px;
+  width: 20vw;
+}
+
+body {
+}
+img {
+  height: 70vh;
+  width: 100%;
+}
+.fancy-picture {
+  display: grid;
+  grid-template-rows: 1fr 3fr 1fr 0.2fr;
+  height: 50vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+.fancy-picture h3 {
+  grid-row: 1;
+  margin: auto;
+}
+
+.fancy-picture a {
+  grid-row: 3;
+  margin: auto;
+  background-image: linear-gradient(to bottom right, red, yellow);
+  color: white;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 2em;
+}
+
+.fighting {
+  background-image: url("fighting.png");
+}
+
+.ludo {
+  background-image: url("ludo.png");
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  background-color: rgb(151, 151, 151);
+}
