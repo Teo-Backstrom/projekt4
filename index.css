@@ -43,6 +43,11 @@ img {
   height: 70vh;
   width: 100%;
 }
+h2 {
+  text-align: center;
+  font-size: 3em;
+  margin-top: 5vh;
+}
 .fancy-picture {
   display: grid;
   grid-template-rows: 1fr 3fr 1fr 0.2fr;
@@ -56,12 +61,17 @@ img {
 .fancy-picture h3 {
   grid-row: 1;
   margin: auto;
+  font-size: 2em;
 }
 
 .fancy-picture a {
   grid-row: 3;
   margin: auto;
-  background-image: linear-gradient(to bottom right, red, yellow);
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(43, 43, 128),
+    rgb(187, 62, 204)
+  );
   color: white;
   text-decoration: none;
   padding: 12px 24px;
