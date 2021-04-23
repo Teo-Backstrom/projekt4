@@ -33,8 +33,11 @@ header nav {
 h1 {
   margin: auto;
   text-align: center;
-  border: solid black 2px;
+  background-color: rgba(255, 255, 255, 0.2);
   width: 20vw;
+  border: solid rgb(53, 0, 53) 5px;
+  border-style: dotted;
+  border-radius: 1em;
 }
 
 body {
@@ -62,6 +65,9 @@ h2 {
   grid-row: 1;
   margin: auto;
   font-size: 2em;
+  background-color: orangered;
+  border-radius: 1em;
+  padding: 6px 12px;
 }
 
 .fancy-picture a {

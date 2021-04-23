@@ -223,29 +223,6 @@ function upDatePos() {
 }
 
 
-red = {"pos": 0, "name": "röd"};
-
-class Player {
-    name = "";
-    pos = 0;
-
-    constructor(name, pos){
-        this.name = name;
-        this.pos = pos;
-    }
-
-    checkWin(){
-        if (this.pos >= 45 && this.pos >= 45 && this.pos >= 45 && this.pos >= 45) {
-            console.log("player " + player.name);
-            document.querySelector('.winner').innerHTML = player.name + " laget vann";
-            document.querySelector(".spel-plan").classList.toggle("invisible");
-            document.querySelector(".result").classList.toggle("invisible");
-        }    
-    }
-
-
-}
-
 function checkWinForPlayer(player){
     if (player.pos >= 45 && player.pos >= 45 && player.pos >= 45 && player.pos >= 45) {
         console.log("player " + player.name);
