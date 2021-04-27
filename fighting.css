@@ -47,3 +47,16 @@ header nav {
   width: 27vw;
   height: 65vh;
 }
+
+.battle-arena {
+  display: none;
+  background-image: url("maxresdefault.jpg");
+  background-size: cover;
+  width: 100vw;
+  height: 85vh;
+}
+
+.battle-arena img {
+  width: 50vw;
+  height: 50vh;
+}

@@ -1,27 +1,26 @@
-let player = 0;
 let playerHp = 100;
 let pcHp = 100;
 
 function choosePlayer() {
     document.querySelector('.espeon').addEventListener("click", function() {
-        player = 1;
-        console.log(player);
         document.querySelector(".choose-player").style.display = "none";
+        document.querySelector(".battle-arena").style.display = "flex";
+        document.querySelector(".friendly-animal").setAttribute("src", "196.png"); 
        } );
 
     document.querySelector('.flareon').addEventListener("click", function() {
-        player = 2;
-        console.log(player);
         document.querySelector(".choose-player").style.display = "none";
+        document.querySelector(".battle-arena").style.display = "flex";
+        document.querySelector(".friendly-animal").setAttribute("src","flareon.jpg");   
        } );
 
     document.querySelector('.vaporeon').addEventListener("click", function() {
-        player = 3;
-        console.log(player);
+        console.log("Changed!");
         document.querySelector(".choose-player").style.display = "none";
+        document.querySelector(".battle-arena").style.display = "flex";
+        document.querySelector(".friendly-animal").setAttribute("src", "134.png");
        } );
     
     }
-
 
     choosePlayer();
