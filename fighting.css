@@ -52,11 +52,24 @@ header nav {
   display: none;
   background-image: url("maxresdefault.jpg");
   background-size: cover;
-  width: 100vw;
-  height: 85vh;
+  height: 84vh;
+}
+.battle-arena img {
+  width: 20vw;
+  height: 50vh;
+}
+.animals {
+  margin: auto;
+  margin-top: 5vh;
+  width: 80vw;
+  display: grid;
+  grid-template-columns: 20vw 1fr 20vw;
 }
 
-.battle-arena img {
-  width: 50vw;
-  height: 50vh;
+.friendly-animal {
+  grid-column: 1;
+}
+
+.enemy-animal {
+  grid-column: 3;
 }
