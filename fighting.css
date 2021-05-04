@@ -11,7 +11,7 @@ header {
 }
 
 li a {
-  font-size: 25px;
+  font-size: 1.5em;
   text-decoration: none;
   color: white;
 }
@@ -72,4 +72,62 @@ header nav {
 
 .enemy-animal {
   grid-column: 3;
+}
+
+.fighting-moves {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  grid-column: 2;
+  grid-row: 1;
+}
+
+button {
+  display: flex;
+  margin-bottom: 0.5em;
+  margin-left: 1em;
+  margin-right: 1em;
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.attack {
+  background-color: orange;
+}
+.heal {
+  background-color: #4caf50;
+}
+.health {
+  font-size: 1.5em;
+  background-color: orangered;
+  text-align: center;
+  border-bottom-right-radius: 1em;
+  border-bottom-left-radius: 1em;
+}
+.enemy-health {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+.player-health {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+footer {
+  height: 5vh;
+  display: flex;
+  justify-content: space-around;
+  white-space: nowrap;
+  background-color: rgb(53, 0, 53);
+  color: rgb(216, 185, 247);
 }
