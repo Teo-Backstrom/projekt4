@@ -35,9 +35,9 @@ function choosePlayer() {
     }
 
     function playerAttackHealthDisplay(number) {
-        let placeholder = document.querySelector('.enemy-health');
-        pcHp = pcHp - number;
-        placeholder.innerHTML = pcHp;
+      let placeholder = document.querySelector('.enemy-health');
+      pcHp = pcHp - number;
+      placeholder.innerHTML = pcHp;
       }
 
       function enemyHealHealthDisplay(number) {
@@ -58,9 +58,16 @@ function choosePlayer() {
       }
       
       document.querySelector('.attack').onclick = function() {
+
         damage = roll();
-            playerAttackHealthDisplay(damage);
+        console.log("22");
+        //något med detta som inte stämmer (playerattackhealthdisplay)
+        playerAttackHealthDisplay(damage);
+        console.log("23");
+
+
             result = attackChoise();
+
            console.log(result); 
         if (result === 0) {
             damage = roll();
