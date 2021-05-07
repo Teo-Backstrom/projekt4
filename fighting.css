@@ -14,7 +14,6 @@ body {
 header {
   background-color: rgb(53, 0, 53);
   color: white;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   padding: 2vw;
 }
 h1 a {
@@ -53,10 +52,12 @@ header nav {
 .choose-player img {
   border: solid black 2px;
   padding: 1em;
+  margin-bottom: 2vh;
   border-bottom-right-radius: 1em;
   border-bottom-left-radius: 1em;
   border-top-left-radius: 1em;
   width: 27vw;
+  margin-bottom: 15vh;
 }
 
 .battle-arena {
@@ -141,7 +142,9 @@ button {
   background-color: #9654cc;
 }
 .result {
+  flex-direction: column;
   display: none;
+  margin-bottom: 57vh;
 }
 
 .winner {
@@ -152,8 +155,6 @@ button {
 
 footer {
   width: 100vw;
-  position: absolute;
-  bottom: 0;
   height: 5vh;
   display: flex;
   justify-content: space-around;

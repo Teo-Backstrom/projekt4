@@ -15,7 +15,6 @@ body {
 header {
   background-color: rgb(53, 0, 53);
   color: white;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   padding: 1vw;
 }
 
@@ -419,6 +418,10 @@ button {
   flex-direction: column;
 }
 
+.result {
+  margin-bottom: 57vh;
+}
+
 .result button {
   display: flex;
   justify-content: center;
@@ -434,7 +437,6 @@ button {
 
 footer {
   margin-top: 5vh;
-  width: 100vw;
   height: 5vh;
   display: flex;
   justify-content: space-around;
