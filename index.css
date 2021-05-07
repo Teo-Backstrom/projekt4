@@ -91,6 +91,7 @@ h2 {
 }
 
 footer {
+  list-style: none;
   height: 5vh;
   display: flex;
   justify-content: space-around;

@@ -154,7 +154,7 @@ button {
 }
 
 footer {
-  width: 100vw;
+  list-style: none;
   height: 5vh;
   display: flex;
   justify-content: space-around;
