@@ -34,17 +34,22 @@ function choosePlayer() {
         return sum * 10;
     }
 
-    function playerAttackHealthDisplay(number) {
-      let placeholder = document.querySelector('.enemy-health');
-      pcHp = pcHp - number;
-      placeholder.innerHTML = pcHp;
-      }
+    
 
       function enemyHealHealthDisplay(number) {
       let placeholder = document.querySelector('.enemy-health');
       pcHp = pcHp + number;
       placeholder.innerHTML = pcHp;
       }
+
+      function playerAttackHealthDisplay(number) {
+        let placeholder = document.querySelector('.enemy-health');
+        console.log("123123123123123");
+        console.log(pcHp);
+        pcHp = pcHp - number;
+        console.log(pcHp);
+        placeholder.innerHTML = pcHp;
+        }
 
       function enemyAttackHealthDisplay(number) {
         let placeholder = document.querySelector('.player-health');
@@ -58,26 +63,23 @@ function choosePlayer() {
       }
       
       document.querySelector('.attack').onclick = function() {
+        console.log("1");
+      damage = roll();
+      console.log("2");
+      playerAttackHealthDisplay(damage);
+      console.log("3");
 
-        damage = roll();
-        console.log("22");
-        //något med detta som inte stämmer (playerattackhealthdisplay)
-        playerAttackHealthDisplay(damage);
-        console.log("23");
-
-
-            result = attackChoise();
-
-           console.log(result); 
-        if (result === 0) {
-            damage = roll();
-            enemyAttackHealthDisplay(damage);
-        } else{
-            damage = roll();
-            enemyHealHealthDisplay(damage);
-        }
-        
+      result = attackChoise();
+      if (result === 0) {
+          damage = roll();
+          enemyAttackHealthDisplay(damage);
+      } else{
+          damage = roll();
+          enemyHealHealthDisplay(damage);
       }
+        checkWinEnemy();
+        checkWinPlayer();
+    }
 
       document.querySelector('.heal').onclick = function() {
           console.log("1");
@@ -94,13 +96,48 @@ function choosePlayer() {
             damage = roll();
             enemyHealHealthDisplay(damage);
         }
-        
+        checkWinEnemy();
+        checkWinPlayer();
       }
+
+      function checkWinEnemy() {
+        if (playerHp < 1) {
+            console.log("redPlayerWin");
+            document.querySelector('.winner').innerHTML = "Enemy Won";
+            document.querySelector(".battle-arena").style.display = "none";
+            document.querySelector(".result").style.display = "flex";
+        }
+    }
+      function checkWinPlayer() {
+        if (pcHp < 1) {
+            console.log("redPlayerWin");
+            document.querySelector('.winner').innerHTML = "Player Won";
+            document.querySelector(".battle-arena").style.display = "none";
+            document.querySelector(".result").style.display = "flex";
+        }
+    }
+
+    function resetGame() {
+        document.querySelector('.resetButton').addEventListener("click", function() {
+            playerHp = 100;
+            pcHp = 100;
+            let placeholder = document.querySelector('.player-health');
+            placeholder.innerHTML = playerHp;
+            placeholder = document.querySelector('.enemy-health');
+            placeholder.innerHTML = pcHp;
+            document.querySelector(".battle-arena").style.display = "none";
+            document.querySelector(".result").style.display = "none";
+        document.querySelector(".choose-player").style.display = "flex";
+
+            
+        });
+    }
 
 
     choosePlayer();
+    resetGame();
 
-    function playerAttackHealthDisplay(number) {
+    /*function playerAttackHealthDisplay(number) {
         pcHp = document.querySelector('.enemy-health');
         pcHp.innerHTML = pcHp - number;
-      }
+      }*/

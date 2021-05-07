@@ -223,14 +223,14 @@ function upDatePos() {
 }
 
 
-function checkWinForPlayer(player){
+/*function checkWinForPlayer(player){
     if (player.pos >= 45 && player.pos >= 45 && player.pos >= 45 && player.pos >= 45) {
         console.log("player " + player.name);
         document.querySelector('.winner').innerHTML = player.name + " laget vann";
         document.querySelector(".spel-plan").classList.toggle("invisible");
         document.querySelector(".result").classList.toggle("invisible");
     }
-}
+}*/
 
 //ha koll ifall alla i laget gått i mål
 function checkWinRed() {
