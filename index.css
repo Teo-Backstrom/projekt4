@@ -47,7 +47,7 @@ img {
 }
 h2 {
   text-align: center;
-  font-size: 3em;
+  font-size: 3rem;
   margin-top: 5vh;
 }
 .fancy-picture {
@@ -62,7 +62,7 @@ h2 {
 .fancy-picture h3 {
   grid-row: 1;
   margin: auto;
-  font-size: 2em;
+  font-size: 1.9rem;
   background-color: orangered;
   border-radius: 1em;
   padding: 6px 12px;
