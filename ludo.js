@@ -223,19 +223,11 @@ function upDatePos() {
 }
 
 
-/*function checkWinForPlayer(player){
-    if (player.pos >= 45 && player.pos >= 45 && player.pos >= 45 && player.pos >= 45) {
-        console.log("player " + player.name);
-        document.querySelector('.winner').innerHTML = player.name + " laget vann";
-        document.querySelector(".spel-plan").classList.toggle("invisible");
-        document.querySelector(".result").classList.toggle("invisible");
-    }
-}*/
 
 //ha koll ifall alla i laget gått i mål
 function checkWinRed() {
     if (Red1 >= 45 && Red2 >= 45 && Red3 >= 45 && Red4 >= 45) {
-        console.log("redPlayerWin");
+
         document.querySelector('.winner').innerHTML = "Röda laget vann";
         document.querySelector(".spel-plan").classList.toggle("invisible");
         document.querySelector(".result").classList.toggle("invisible");
@@ -244,7 +236,6 @@ function checkWinRed() {
 
 function checkWinGreen() {
     if (Green1 >= 45 && Green2 >= 45 && Green3 >= 45 && Green4 >= 45) {
-        console.log("greenPlayerWin");
         document.querySelector('.winner').innerHTML = "Gröna laget vann";
         document.querySelector(".spel-plan").classList.toggle("invisible");
         document.querySelector(".result").classList.toggle("invisible");
@@ -253,7 +244,6 @@ function checkWinGreen() {
 
 function checkWinBlue() {
     if (Blue1 >= 45 && Blue2 >= 45 && Blue3 >= 45 && Blue4 >= 45) {
-        console.log("BluePlayerWin");
         document.querySelector('.winner').innerHTML = "Blåa laget vann";
         document.querySelector(".spel-plan").classList.toggle("invisible");
         document.querySelector(".result").classList.toggle("invisible");
@@ -262,7 +252,6 @@ function checkWinBlue() {
 
 function checkWinYellow() {
     if (Yellow1 >= 45 && Yellow2 >= 45 && Yellow3 >= 45 && Yellow4 >= 45) {
-        console.log("YellowPlayerWin");
         document.querySelector('.winner').innerHTML = "Gula laget vann";
         document.querySelector(".spel-plan").classList.toggle("invisible");
         document.querySelector(".result").classList.toggle("invisible");
@@ -479,7 +468,6 @@ function roll() {
   document.querySelector('.dice').onclick = function() {
     result = roll();
     printNumber(result);
-    console.log(currentPlayer);
     
   }
   //kör funktionerna för att spelet ska funka
